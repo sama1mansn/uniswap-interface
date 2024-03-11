@@ -90,7 +90,7 @@ module.exports = {
           // CSS ordering is mitigated through scoping / naming conventions, so we can ignore order warnings.
           // See https://webpack.js.org/plugins/mini-css-extract-plugin/#remove-order-warnings.
           if (plugin instanceof MiniCssExtractPlugin) {
-            plugin.options.ignoreOrder = true
+            plugin.options.ignoreOrder = false
           }
 
           // Disable TypeScript's config overwrite, as it interferes with incremental build caching.
